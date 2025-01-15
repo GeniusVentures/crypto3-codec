@@ -367,7 +367,8 @@ namespace nil {
                         decoded_block_type out = {0};
                         encoded_block_type output_buffer = {0};
 
-                        typename decoded_block_type::iterator oit = std::begin(output_buffer);
+                        //typename decoded_block_type::iterator oit = std::begin(output_buffer);
+                        typename encoded_block_type::iterator oit = std::begin(output_buffer);
 
                         for (typename encoded_block_type::const_iterator it = std::begin(encoded);
                              it != std::end(encoded);
